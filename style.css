@@ -1,0 +1,588 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* *{
+    border: 1px solid black;
+} */
+
+button:hover{
+    text-decoration: underline;
+    color: burlywood;
+    cursor: pointer;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home-content img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.header-inner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    background-color: #f4e5d6;
+}
+
+.logo{
+    padding: 25px 0 0 25px;
+    width: 200px;
+}
+
+.menus{
+    padding-top: 20px;
+    padding-right: 200px;
+}
+
+.menus a{
+    color: black;
+    font-size: 16px;
+    font-weight: 350;
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+.menus a:hover{
+    color: brown;
+    text-decoration: underline;
+    font-weight: 400;
+    font-size: 16px;
+    transition: all 0.6s ease;
+}
+
+.icons{
+    /* padding: 20px 30px 0px 0px; */
+    opacity: 0;
+    top: -10px;
+    transition: top 0.7s ease-in;
+}
+
+.icons:hover {
+    opacity: 1;
+    cursor: pointer;
+    bottom: 0px;
+    transition: bottom 0.7s ease-in;
+}
+
+.icon-p{
+    position: relative;
+}
+.icon-p .counter{
+    position: absolute;
+    top: -6px;
+    right: -9px;
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    color: #fff;
+    border-radius: 50%;
+    justify-content: center;
+    font-size: 12px;
+}
+
+svg{
+    padding-left: 20px;
+}
+
+.home-img{
+    position: absolute;
+}
+
+.home-content{
+    position: relative;
+    top: 70px;
+    padding-left: 20px;
+    gap: -10px;
+}
+
+.home-content h1{
+    font-size: 82px;
+}
+.home-img img{
+    width: 100%;
+    object-fit: contain;
+
+}
+
+.home-content button{
+    border: none;
+    background-color: transparent;
+    font-size: 22px;
+    text-decoration: underline;
+    
+}
+
+.bottom-home{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 240px;
+    width: 100%;
+    position: relative;
+}
+
+.first{
+    transition: all 1s ease;
+}
+
+.first .first-content{
+    position: absolute;
+    bottom: 40px;
+}
+
+.first-content{
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+.first-content h1{
+    font-size: 40px;
+    padding-left: 10px;
+}
+
+.first-content button{
+    border: none;
+    background-color: transparent;
+    font-size: 22px;
+    text-decoration: underline;   
+}
+
+.pick-product .heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading h1{
+    font-size: 48px;
+}
+
+.heading p{
+    color: rgb(135, 135, 92);
+}
+
+.photo:hover img{
+    filter: blur(3px);
+    transition: all 0.6s ease;
+}
+
+.hab-content button:hover{
+    font-size: 18px;
+    border: 2px solid burlywood;
+    color: burlywood;
+    background-color: transparent;
+
+}
+
+.photo{
+    filter: blur(0px);
+    transition: all 0.6s ease;
+}
+
+.parts{
+    margin-left: 10px;
+    /* border: 2px solid #f7e4d3; */
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.parts{
+    position: relative;
+}
+
+.parts img{
+    object-fit: contain;
+    height: 300px;
+}
+
+.p-icon svg{
+    padding-left: 7px;
+    margin-right: 7px;
+}
+
+.product{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+.p-icon{
+    background-color: rgb(0, 0, 0);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    fill: white;
+    margin-right: 2px;
+    position: relative;
+    
+}
+
+.p-icon:hover{
+    background-color: burlywood;
+    bottom: 0px;
+}
+
+.p-icon .pi-1{
+    align-items: center;
+}
+
+.parts p{
+    padding-left: 4px;
+    font-size: 18px;
+    color: #000000;
+    font-weight: lighter;
+}
+
+.prod-heading:hover{
+    color: brown;
+    cursor: pointer;    
+}
+
+
+.color{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: aqua;
+    align-items: center;
+}
+
+.color:hover{
+    cursor: pointer;
+}
+
+.colors{
+    display: flex;
+    flex-direction: row;
+    padding-left: 5px;
+}
+
+.a{
+    margin-right: 5px;
+    background-color: lightsalmon;
+}
+
+.b{
+    margin-right: 5px;
+    background-color: burlywood;
+}
+
+.c{
+    margin-right: 5px;
+    background-color: chocolate;
+}
+
+.d{
+    margin-right: 5px;
+    background-color: slategray;
+}
+
+
+/* 
+.product img{
+    width: 200px;
+    object-fit: cover;
+} */
+
+.product{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.view-button button{
+    background-color: black;
+    border: none;
+    color: white;
+    /* font-weight: bold; */
+    padding: 15px 35px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-left: 500px;
+    margin-bottom: 20px;
+}
+
+.view-button button:hover{
+    background-color: burlywood;
+}
+
+.home-and-button{
+    margin-top: 100px;
+}
+
+.hab-img{
+    position: absolute;
+}
+
+.hab-img img{
+    object-fit: cover;
+}
+
+.hab-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.hab-content p{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.hab-content h1{
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.hab-content button{
+    border: 2px solid black;
+    background-color: transparent;
+    padding: 17px 35px;
+    font-size: 18px;
+    /* font-weight: bold; */
+}
+
+.blog-section{
+    flex-direction: column;
+    /* margin-top: 20px; */
+    padding-top: 150px;
+    /* background-color: aqua; */
+    height: 1200px;
+    width: 100%;
+}
+
+.blog-heading{
+    flex-direction: column;
+}
+
+.blog-heading h1{
+    font-size: 38px;
+    padding-top: 10px;
+}
+
+.blog-heading p{
+    /* padding-top: -5px; */
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: 0px;
+}
+.images-nd-content{
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.blog{
+    flex-direction: column;
+    padding: 0px 15px;
+
+}
+
+.blog img{
+    height: 220px;
+    width: 360px;
+}
+
+.blog button{
+    border: none;
+    background-color: transparent;
+    font-size: 19px;
+    text-decoration: underline;   
+}
+
+.view-all button{
+    background-color: black;
+    border: none;
+    color: white;
+    /* font-weight: bold; */
+    padding: 15px 35px;
+    font-size: 18px;
+    margin: 8px 0px;
+}
+
+.view-all button:hover{
+    background-color: burlywood;
+}
+
+.insta-img{
+    position: absolute;
+    height: 350px;
+}
+
+.insta-content{
+    position: relative;
+    padding-left: 100px;
+    padding-top: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.insta-content h1{
+    font-size: 46px;
+}
+
+.insta-content p{
+    margin-top: 0%;
+    font-size: 17px;
+    color: #6b6762;
+}
+
+.insta-content button{
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.gallery-images{
+    margin-top: 100px;
+    padding-top: 70px;
+}
+
+.g-images img{
+    height: 100%;
+    width: 100%;
+    /* position: relative; */
+}
+
+.g1{
+    position: relative;
+}
+
+.g1 h1{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 197px;
+    width: 193px;
+    background-color: rgba(222, 184, 135, 0.496);
+    color: white;
+    opacity: 0;
+    font-size: 55px;
+    font-weight: lighter;
+}
+
+.g1:hover h1{
+    cursor: pointer;
+    opacity: 1;
+    top: -45px;
+    transition: all 0.4s ease-in;
+}
+
+.g-images img:hover{
+    cursor: pointer;
+}
+.g-images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 0px 15px;
+}
+
+.foot{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.foot-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.foot-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 42px 20px 10px 10px;
+}
+
+.foot-menus a{
+    padding-left: 15px;
+    text-decoration: none;
+    color: rgb(98, 90, 90);
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.f1 p{
+    font-weight: lighter;
+    color: rgb(98, 90, 90);
+}
+.foot-1 f2{
+    border: none;
+}
+
+input{
+    width: 500px;
+    height: 20px;
+    color: rgb(84, 83, 83);
+    border: none;
+}
+
+.f2 button{
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    gap: 2px;
+    /* font-weight: 600; */
+    text-decoration: underline;
+}
+
+.f-icon svg{
+    height: 20px;
+    width: 20px;
+    opacity: 0.2;
+    padding: 8px;
+}
+
+.f-icon svg:hover{
+    opacity: 1;
+    transition: all 0.6s ease;
+    cursor: pointer;
+}
+
+.f3{
+    padding-left: 10px;
+}
+
+.f3 p{
+    color: rgb(98, 90, 90);
+    font-weight: lighter;
+}
+/* 
+Bar
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+Calender
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z"/></svg>
+*/
